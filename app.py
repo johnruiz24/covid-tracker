@@ -65,7 +65,6 @@ def update_map_plot(count_type, count_category):
     count_col = count_category if count_type == 'actual' else count_category + 'PerCapita'
     return get_map_plot(covid_df, count_col)
 
-
 @app.callback(
     Output('bar_race_graph', 'figure'),
     [
@@ -76,7 +75,6 @@ def update_bar_raceplot(count_type, count_category):
     count_col = count_category if count_type == 'actual' else count_category + 'PerCapita'
     return get_bar_raceplot(covid_df, count_col=count_category)
 
-
 @app.callback(
     Output('country_graph', 'figure'),
     [
@@ -86,7 +84,6 @@ def update_bar_raceplot(count_type, count_category):
 def update_bar_plot(count_type, count_category):
     count_col = count_category if count_type == 'actual' else count_category + 'PerCapita'
     return get_country_timeseries(covid_df, count_col)
-
 
 @app.callback(
     Output('total_graph', 'figure'),
