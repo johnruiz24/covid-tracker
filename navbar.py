@@ -50,6 +50,7 @@ def header():
     ], style = {'height' : '4%',
                 'background-color' : corporate_colors['dark-blue-grey']})
     return header
+
 def Navbar(page = 'tracker'):
     navbar_tracker = html.Div([
         dbc.NavbarSimple(
@@ -63,16 +64,16 @@ def Navbar(page = 'tracker'):
         )
     ],
     style = {'height' : '2%', 'background-color' : corporate_colors['white']})
-    navbar_response = html.Div([
-        dbc.NavbarSimple(
-            children=[
-                dbc.NavItem(dbc.NavLink(html.H4(children = 'Tracker', style = {'font_family':'Arial'}), href="/tracker")),
-                dbc.NavItem(dbc.NavLink(html.H4(children ="Policy Response", style = navbarcurrentpage), href="https://covid19-policy-response.herokuapp.com/"))
-            ],
-            sticky="top",
-            className = 'col-8'
-        )
-    ],
-    style = {'height' : '2%', 'background-color' : corporate_colors['white']})
+    #navbar_response = html.Div([
+    #    dbc.NavbarSimple(
+    #        children=[
+    #            dbc.NavItem(dbc.NavLink(html.H4(children = 'Tracker', style = {'font_family':'Arial'}), href="/tracker")),
+    #            dbc.NavItem(dbc.NavLink(html.H4(children ="Policy Response", style = navbarcurrentpage), href="https://covid19-policy-response.herokuapp.com/"))
+    #        ],
+    #        sticky="top",
+    #        className = 'col-8'
+    #    )
+    #],
+    #style = {'height' : '2%', 'background-color' : corporate_colors['white']})
     if page == 'tracker':
         return navbar_tracker
