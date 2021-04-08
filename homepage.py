@@ -133,7 +133,6 @@ modal = html.Div([ # External row
     style = filterdiv_borderstyling) # External 12-column
     ], className = 'row sticky-top') # External row
 
-
 body = html.Div([ # External row
     html.Div([], className = 'col-1'), # Blank 1 column
     html.Div([ # External 10-column
