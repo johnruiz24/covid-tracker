@@ -6,7 +6,7 @@ dash-renderer
 dash-table
 Flask
 Flask-Compress
-gunicorn==20.0.4
+gunicorn
 numpy
 pandas
 plotly
