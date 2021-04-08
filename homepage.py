@@ -182,7 +182,6 @@ body = html.Div([ # External row
     html.Div([], className = 'col-1'), # Blank 1 column
     ], className = 'row', style = externalgraph_colstyling) # External row
 
-
 def Homepage():
     layout = html.Div([
         header,
