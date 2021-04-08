@@ -7,10 +7,9 @@ dash-table
 Flask
 Flask-Compress
 gunicorn
-numpy
+numpy==1.18.4
 pandas
 plotly
 requests
 pycountry-convert
 gevent
-PyGithub
